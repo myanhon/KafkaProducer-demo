@@ -1,21 +1,16 @@
 package kafka;
 
 import java.util.Properties;
-
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
-
 import io.github.cdimascio.dotenv.Dotenv;
-
-
 
 public class ProducerDemo {
     Dotenv dotenv = Dotenv.load();
     private String bootstrapServer = dotenv.get("bootstrapserver");
 
     public ProducerDemo() {
-
 
         Properties properties = new Properties();
         // hardcoded
@@ -37,7 +32,7 @@ public class ProducerDemo {
         producer.send(record);
 
         // flush data
-        //producer.flush();
+        // producer.flush();
 
         // flush and close producer
         producer.close();
