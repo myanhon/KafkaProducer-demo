@@ -2,7 +2,6 @@ package kafka;
 
 import java.util.Properties;
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import io.github.cdimascio.dotenv.Dotenv;
 

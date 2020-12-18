@@ -9,7 +9,6 @@ import io.github.cdimascio.dotenv.Dotenv;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
         // ProducerDemo producerDemo = new ProducerDemo();
         ProducerDemoWithCallback producerDemo2 = new ProducerDemoWithCallback();
     }
